@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            static count=0;
+
+            constructor(name,roll,marks) {
+                this.name=name;
+                this.marks=marks;
+                this.roll=roll;
+                student.count++;
+            }
+            display() {
+                console.log(this.name)
+                console.log(this.marks)
+                console.log(this.roll)
+
+                if(this.marks>=35)
+            {
+                console.log("pass");
+            }
+               else{
+                console.log("fail");
+               }
+            }
+        }
+
+        let s1=new student("shivam",1,45)
+        let s2=new student("rishu",2,48)
+        let s3=new student("sanu",3,51)
+
+        s1.display();
+        s2.display();
+        s3.display();
+    </script>
+</body>
+</html>
